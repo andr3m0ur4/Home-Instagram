@@ -11,8 +11,14 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: rgb(243, 243, 243);
-    display: flex;
-    justify-content: center;
+}
+
+header.container-fluid {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: 0;
 }
 
 .instagram-wrapper {
@@ -125,6 +131,10 @@ body {
 
 .app-download:nth-child(2) {
     background-image: url(/img/googleplay-button.png);
+}
+
+a.nav-link {
+    color: black;
 }
 
 /* media queries */
