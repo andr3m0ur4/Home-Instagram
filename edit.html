@@ -12,34 +12,47 @@
 </head>
 <body>
 
-    <header class="container-fluid">
+    <header class="container-fluid border-bottom border-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light nav nav-pills nav-justified">
             <div class="container">
                 <a href="#" class="navbar-brand nav-item">
                     <img src="./img/instagram-logo2.png" alt="Logo" class="image-fluid">
                 </a>
-                <form action="" class="form-inline nav-item">
+                <form action="" class="form-inline nav-item d-none d-md-block">
                     <input type="search" class="form-control mr-sm-2" placeholder="Pesquisar">
                 </form>
                 <div class="collapse navbar-collapse nav-item" id="textoNavbar">
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/home.png" class="img-fluid" alt="Home">
+                                <span class="sr-only">(Página atual)</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inbox</a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/send.png" class="img-fluid" alt="Enviar mensagem">
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Publicar</a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/add.png" class="img-fluid" alt="Adicionar">
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Explorar</a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/compass.png" class="img-fluid" alt="Explorar">
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Atividade</a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/heart.png" class="img-fluid" alt="Atividade">
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Perfil</a>
+                            <a class="nav-link" href="#">
+                                <img src="./img/andre-profile.jpg" class="img-fluid rounded-circle" alt="Perfil">
+                            </a>
                         </li>
                     </ul>
                   </div>
@@ -49,21 +62,131 @@
 
     <main class="container mt-5">
         <div class="row mx-5 border bg-white">
-            <div class="col-3 border py-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#">Editar Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Conta profissional</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Alterar senha</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Aplicativos e sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Email e SMS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Notificação push</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gerenciar contatos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Privacidade e segurança</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Atividade de login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Emails do Instagram</a></li>
-                    <li class="nav-item"><a class="" href="#">Mudar para a conta pessoal</a></li>
-                </ul>
+            <div class="col col-lg-9 order-2 border py-4">
                 <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-sm-2">
+                            <figure id="profile" class=" ml-sm-auto">
+                                <img src="./img/andre-profile.jpg" class="img-fluid rounded-circle" alt="Perfil">
+                            </figure>
+                        </div>
+                        <div class="col-9 col-sm-8 mb-3">
+                            <h5>andreMoura</h5>
+                            <a href="#">Alterar foto do perfil</a>
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="name" class="h5 font-weight-bold">Nome</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="text" id="name" value="André Moura" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <p class="font-light">
+                                Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.
+                            </p>
+                            <p class="font-light">
+                                Você pode alterar o seu nome apenas duas vezes a cada 14 dias.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="user-name" class="h5 font-weight-bold">Nome de usuário</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="text" id="user-name" value="andreMoura" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <p class="font-light">
+                                Na maioria dos casos, você poderá alterar seu nome de usuário novamente para andreM0ura por mais 14 dias.
+                                <a href="#">Saiba mais</a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="website" class="h5 font-weight-bold">Site</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="url" id="website" value="https://andremouradev.com.br" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="byograph" class="h5 font-weight-bold">Biografia</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <textarea class="form-control" id="byograph">Eu sou o que Deus pensa de mim!</textarea>
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3 mt-4">
+                            <h5 class="font-light">Informações pessoais</h5>
+                            <p class="font-light">
+                                Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="email" class="h5 font-weight-bold">Email</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="email" id="email" value="andre.benedicto@etec.sp.gov.br" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="phone" class="h5 font-weight-bold">Telefone</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="tel" id="phone" value="+55 12 98856-3036" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 pt-1 text-sm-right">
+                            <label for="gender" class="h5 font-weight-bold">Gênero</label>
+                        </div>
+                        <div class="col-12 col-sm-8 mb-3">
+                            <input type="text" id="gender" value="Masculino" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-3 text-sm-right">
+                            <label for="conta" class="h5 font-weight-bold">
+                                Sugestões de contas similares
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="form-group form-check d-flex">
+                                <input type="checkbox" class="form-check-input align-self-center" id="conta">
+                                <label class="form-check-label" for="conta">Incluir sua conta ao recomendar contas similares que as pessoas talvez queiram seguir. <a href="#">[?]</a></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="col-12 col-sm-3">
+                                    <button class="btn btn-primary">Enviar</button>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <a class="custom-link white-space" href="#">Desativar minha conta temporariamente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 order-1 border py-3">
+                <ul class="nav flex-column pb-5 border-bottom">
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Editar Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Conta profissional</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Alterar senha</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Aplicativos e sites</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Email e SMS</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Notificação push</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Gerenciar contatos</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Privacidade e segurança</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Atividade de login</a></li>
+                    <li class="nav-item"><a class="nav-link h5 my-2" href="#">Emails do Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="#">Mudar para a conta pessoal</a></li>
+                </ul>
+                <div class="container pt-4">
                     <div class="row">
                         <div class="col-6">
                             FACEBOOK
@@ -78,159 +201,53 @@
                             </div>
                         </div>
                         <h4><a href="">Central de Contas</a></h4>
-                        <p>
+                        <p class="font-light">
                             Controle as configurações para experiências conectadas no Instagram, no aplicativo do Facebook e no Messenger, incluindo o compartilhamento de stories e publicações e o login.
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9 border py-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-3">
-                            foto
-                        </div>
-                        <div class="col-8 mb-3">
-                            <h5>andreMoura</h5>
-                            <a href="#">Alterar foto do perfil</a>
-                        </div>
-                        <div class="col-3">
-                            Nome
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="text" value="André Moura" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-8 mb-3">
-                            <p>
-                                Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.
-                            </p>
-                            <p>
-                                Você pode alterar o seu nome apenas duas vezes a cada 14 dias.
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            Nome de usuário
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="text" value="andreMoura" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-8 mb-3">
-                            <p>
-                                Na maioria dos casos, você poderá alterar seu nome de usuário novamente para andreM0ura por mais 14 dias.
-                                <a href="#">Saiba mais</a>
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            Site
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="url" value="https://andremouradev.com.br" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            Biografia
-                        </div>
-                        <div class="col-8 mb-3">
-                            <textarea class="form-control">Eu sou o que Deus pensa de mim!</textarea>
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-8 mb-3">
-                            <h6>Informações pessoais</h6>
-                            <p>
-                                Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            Email
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="email" value="andre.benedicto@etec.sp.gov.br" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            Telefone
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="tel" value="+55 12 98856-3036" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            Gênero
-                        </div>
-                        <div class="col-8 mb-3">
-                            <input type="text" value="Masculino" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            Sugestões de contas similares
-                        </div>
-                        <div class="col-8">
-                            <div class="form-group form-check d-flex">
-                                <input type="checkbox" class="form-check-input align-self-center" id="conta">
-                                <label class="form-check-label" for="conta">Incluir sua conta ao recomendar contas similares que as pessoas talvez queiram seguir. <a href="#">[?]</a></label>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col-4">
-                                    <button class="btn btn-primary">Enviar</button>
-                                </div>
-                                <div class="col-8">
-                                    <a href="#">Desativar minha conta temporariamente</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-1">
+    <footer class="container my-5 font-light">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="px-2">
                 Sobre
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Blog
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Carreiras
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Ajuda
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 API
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Privacidade
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Termos
             </div>
-            <div class="col-2">
+            <div class="px-2" style=" white-space: nowrap;">
                 Principais contas
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Hashtags
             </div>
-            <div class="col-1">
+            <div class="px-2">
                 Localizações
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-3">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="px-2">
                 Português (Brasil)
             </div>
-            <div class="col-3">
+            <div class="px-2">
                 &copy; 2021 Instagram do Facebook
             </div>
         </div>
