@@ -229,4 +229,13 @@ footer .col, footer .col-4 {
     .group {
         border: 1px solid transparent;
     }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download a {
+        margin-bottom: 10px;
+    }
 }

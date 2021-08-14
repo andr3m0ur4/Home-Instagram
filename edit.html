@@ -12,52 +12,43 @@
 </head>
 <body>
 
-    <header class="container-fluid border-bottom border-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav nav-pills nav-justified">
-            <div class="container">
-                <a href="#" class="navbar-brand nav-item">
-                    <img src="./img/instagram-logo2.png" alt="Logo" class="image-fluid">
-                </a>
-                <form action="" class="form-inline nav-item d-none d-md-block">
-                    <input type="search" class="form-control mr-sm-2" placeholder="Pesquisar">
-                </form>
-                <div class="collapse navbar-collapse nav-item" id="textoNavbar">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <img src="./img/home.png" class="img-fluid" alt="Home">
-                                <span class="sr-only">(Página atual)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./img/send.png" class="img-fluid" alt="Enviar mensagem">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./img/add.png" class="img-fluid" alt="Adicionar">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./img/compass.png" class="img-fluid" alt="Explorar">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./img/heart.png" class="img-fluid" alt="Atividade">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./img/andre-profile.jpg" class="img-fluid rounded-circle" alt="Perfil">
-                            </a>
-                        </li>
-                    </ul>
-                  </div>
-            </div>
-        </nav>
+    <header>
+        <!-------------- Menu ---------------->
+        <div class="container-fluid mt-1 pb-5 col-lg-12 ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+                <!-------------- Logo ---------------->
+                <div class="col-lg-4">
+                    <div class="row col-lg-10 ml-auto">
+                        <a href="feed.html"><img src="img/logo_1.png"></a>
+                    </div>
+                </div>
+                <!-------------- Fim Logo ---------------->
+
+                <!-------------- Barra de pesquisa ---------------->
+                <div class="collapse navbar-collapse justify-content-center col-lg-4 d-none d-lg-block" id="pesquisar">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    </form>
+                </div>
+                <!-------------- Barra de pesquisa ---------------->
+
+                <!-------------- Incones/Atalhos ---------------->
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="row col-lg-10 ml-auto">
+                        <a class="nav-link px-2" href="./feed.html"><i class="fas fa-home mr-2"></i></a>
+                        <a class="nav-link px-2" href="#"><i class="fas fa-comment-dots mr-2"></i></a>
+                        <a class="nav-link px-2" href="#"><i class="fas fa-compass mr-2"></i></a>
+                        <a class="nav-link px-2" href="#"><i class="fas fa-heart mr-2"></i></a>
+                        <a class="nav-link px-2" href="./profile.html">
+                            <img src="img/minhafoto.jpg" width="20" height="20" class="rounded-circle">
+                        </a>
+                    <div class="row col-lg-10 ml-auto">
+                </div>
+                 <!-------------- Fim Incones/Atalhos ---------------->
+
+            </nav>
+        </div>
+         <!-------------- Fim Menu ---------------->
     </header>
 
     <main class="container mt-5">

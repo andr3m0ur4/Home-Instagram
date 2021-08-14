@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <link rel="shortcut icon" href="./img/instagram.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,15 +23,15 @@
                     <div class="profile-photo">
                         <img src="./img/andre-moura.jpg" alt="Foto de Perfil">
                     </div>
-                    <a href="#" class="instagram-login">Continue como andremoura</a>
-                    <a href="#" class="instagram-logout">Remover conta</a>
+                    <a href="./feed.html" class="instagram-login">Continue como andremoura</a>
+                    <a href="#" id="remover" class="instagram-logout">Remover conta</a>
                 </div>
                 <div class="group">
                     <p class="not-account">Não é andremoura?</p>
                     <p class="notaccount">
-                        <a href="#"><span class="link-blue">Alternar contas</span></a>
+                        <a href="#" id="alternar"><span class="link-blue">Alternar contas</span></a>
                         ou
-                        <a href="#"><span class="link-blue">Inscreva-se</span></a>
+                        <a href="#" id="inscrever"><span class="link-blue">Inscreva-se</span></a>
                     </p>
                 </div>
                 <div class="get-the-app">
@@ -43,6 +44,12 @@
             </div>
         </div>
     </main>
-    
+
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/instagram.js"></script>
+
 </body>
 </html>
